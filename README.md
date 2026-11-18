@@ -63,4 +63,4 @@ node_modules, dist, .env, .env.local, .env.*.local, log files and operating syst
 
 ## Limits
 - The task dates are counted from today, so the dates on the page change every day.
-- Exact versions, hashes and file sizes depend on the day the packages are installed.
+- Exact versions, hashes and file sizes depend on the day the packages are installed
