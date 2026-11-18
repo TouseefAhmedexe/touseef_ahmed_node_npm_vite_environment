@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A study planner built with npm packages and the Vite development server.">
+    <meta name="author" content="Touseef Ahmed">
+    <title>Study Planner | npm Project</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Study Planner</h1>
+        <p>The dates and totals on this page are calculated with the npm packages <code>dayjs</code> and <code>lodash-es</code>. The page is served by Vite.</p>
+    </header>
+
+    <main class="page">
+        <section class="panel" aria-labelledby="today-title">
+            <h2 id="today-title">Today</h2>
+            <p id="today-text"></p>
+        </section>
+
+        <section class="panel" aria-labelledby="subjects-title">
+            <h2 id="subjects-title">Subjects</h2>
+            <ul id="subject-summary"></ul>
+        </section>
+
+        <section class="panel" aria-labelledby="tasks-title">
+            <h2 id="tasks-title">Tasks</h2>
+
+            <div class="field">
+                <label for="subject-filter">Subject</label>
+                <select id="subject-filter" name="subject"></select>
+            </div>
+
+            <p class="hint" id="task-count" role="status"></p>
+
+            <div class="table-wrap">
+                <table class="data-table">
+                    <caption class="visually-hidden">Study tasks with their due dates</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Task</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Due</th>
+                            <th scope="col">Days left</th>
+                            <th scope="col">Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="task-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="runtime-title">
+            <h2 id="runtime-title">Where this code runs</h2>
+            <p>The browser provides <code>window</code> and <code>document</code>. Node.js provides <code>process</code>. The same task data is used by the terminal report: run <code>npm start</code> in the project folder.</p>
+            <dl class="fact-list" id="environment-list"></dl>
+        </section>
+    </main>
+
+    <noscript>
+        <p class="alert">This page needs JavaScript to show the tasks.</p>
+    </noscript>
+
+    <footer class="site-footer">
+        <p><small>&copy; 2026 Touseef Ahmed</small></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

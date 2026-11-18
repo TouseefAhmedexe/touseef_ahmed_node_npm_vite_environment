@@ -1,0 +1,15 @@
+npm pkg set scripts.start="node src/report.js"
+npm pkg set scripts.report="node --env-file=.env src/report.js"
+{
+    "name": "study-planner",
+    "version": "1.0.0",
+    "description": "A study planner that uses dayjs and lodash-es, run with Node.js and Vite",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=22.12.0"
+    },
+    "author": "Touseef Ahmed",
+    "license": "ISC"
+    
+}
