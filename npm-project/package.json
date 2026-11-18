@@ -1,5 +1,3 @@
-npm pkg set scripts.start="node src/report.js"
-npm pkg set scripts.report="node --env-file=.env src/report.js"
 {
     "name": "study-planner",
     "version": "1.0.0",
